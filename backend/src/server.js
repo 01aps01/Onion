@@ -6,7 +6,7 @@ import cors from 'cors';
 import authRoutes from './routes/auth.route.js'
 import messageRoutes from './routes/message.route.js'
 import { connectDB } from './lib/db.js';
-import { app } from "./lib/socket.js";
+import { app, server } from "./lib/socket.js";
 
 const __dirname = path.resolve();
 

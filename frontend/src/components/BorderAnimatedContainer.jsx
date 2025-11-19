@@ -7,9 +7,3 @@ function BorderAnimatedContainer({ children }) {
 }
 export default BorderAnimatedContainer;
 
-
-
-
-
-// How to make animated gradient border 👇
-// https://cruip-tutorials.vercel.app/animated-gradient-border/
