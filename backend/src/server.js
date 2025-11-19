@@ -6,8 +6,8 @@ import cors from 'cors';
 import authRoutes from './routes/auth.route.js'
 import messageRoutes from './routes/message.route.js'
 import { connectDB } from './lib/db.js';
+import { app } from "./lib/socket.js";
 
-const app = express();
 const __dirname = path.resolve();
 
 const PORT = ENV.PORT;
@@ -28,7 +28,7 @@ app.use("/api/messages", messageRoutes)
     })
  }
 
-app.listen(PORT, ()=> {
+server.listen(PORT, ()=> {
     console.log(`server is running on port ${PORT}`);
     connectDB();
 })
